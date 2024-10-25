@@ -1,11 +1,18 @@
 import "../Header/HeaderStyle.css"
-function Header(){
-    return(
+import SideBar from "./SideBar/SideBarStyle"
+function Header() {
+    return (
         <header>
-            <p className="Title">Henry(Qihan) Wang</p>
-            <p className="LinkedIn">LinkedIn</p>
-            <p className="GitHub">GitHub</p>
-            <button id="contact_me_btn">Contact Me</button>
+            <div className="BigScreen">
+                <p className="Title">Henry(Qihan) Wang</p>
+                <p className="LinkedIn">LinkedIn</p>
+                <p className="GitHub">GitHub</p>
+                <button id="contact_me_btn">Contact Me</button>
+            </div>
+            <div className="MobileLayout">
+                <p className="Title">Henry(Qihan) Wang</p>
+                <SideBar/>
+            </div>
         </header>
     )
 }

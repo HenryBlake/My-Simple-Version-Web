@@ -5,6 +5,12 @@
         flex-direction: column;
         align-items: center;
     }
+
+    .BigScreen{
+        visibility: hidden;
+        height: 0;
+        width: 0;
+    }
     
    
 }

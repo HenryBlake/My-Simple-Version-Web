@@ -6,7 +6,7 @@ function Header() {
         <header>
             <div className="BigScreen">
                 <p className="Title">Henry(Qihan) <span style={{ color: 'red' }}>Wang</span></p>
-                <p className="LinkedIn"><a href="https://www.linkedin.com/in/qihan-wang-5098a62a5">LinkedIn</a></p>
+                <a href="https://www.linkedin.com/in/qihan-wang-5098a62a5" className="LinkedIn">LinkedIn</a>
                 <a href="https://github.com/HenryBlake" className="GitHub">GitHub</a>
                 <button id="contact_me_btn">Contact Me</button>
             </div>

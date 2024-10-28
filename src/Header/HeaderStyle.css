@@ -1,91 +1,111 @@
 /* Get the font form Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Angkor&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inconsolata:wght@200..900&family=Madimi+One&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ojuju:wght@200..800&family=Oswald:wght@200..700&family=Truculenta:opsz,wght@12..72,100..900&family=Whisper&display=swap');
-@media only screen and (max-width:600px) {
-    /* header{
+@import url("https://fonts.googleapis.com/css2?family=Angkor&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inconsolata:wght@200..900&family=Madimi+One&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ojuju:wght@200..800&family=Oswald:wght@200..700&family=Truculenta:opsz,wght@12..72,100..900&family=Whisper&display=swap");
+@media only screen and (max-width: 600px) {
+  /* header{
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
     } */
 
-    .BigScreen{
-        visibility: hidden;
-        height: 0;
-        width: 0;
-    }
-    .MobileLayout{
-        display: flex;
-        flex-direction: row;
-        justify-items: center;
-        align-items: center;
-    }
-    .Title{
-        flex: 3;
-    }
-    SideBar{
-        flex: 2;
-        align-self: self-end;
-    }
-   
+  .BigScreen {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+  }
+  .MobileLayout {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+  }
+  .Title {
+    flex: 3;
+  }
+  SideBar {
+    flex: 2;
+    align-self: self-end;
+  }
+  /* .SideBar_container {
+    position: absolute;
+    width: 96%;
+    height: 200px;
+    transition: height 2s ease;
+    background-color: gray;
+  }
+  .SideBar_container.show{
+    height: 200px;
+  } */
+  .SideBar_container {
+    position: fixed;
+    top: 0;
+    right: -250px; /* 初始状态在视口外 */
+    width: 250px;
+    height: 100%;
+    transition: right 0.5s ease; /* 平滑过渡 */
+    background-color: gray;
+  }
+  .SideBar_container.show {
+    right: 0; /* 展开时移入视口 */
+  }
 }
+
 /* End of mobile layout */
 
-
-@media screen and (min-width:600px) {
-    .BigScreen{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-    .Title{
-        flex: 3;
-        font-size: 2.25rem;
-    }
-    .LinkedIn{
-        flex: 1;
-        color: black;
-        font-size: 2.25rem;
-    }
-    .LinkedIn:hover{
-        color: blue;
-    }
-    .GitHub{
-        flex: 1;
-        color: black;
-        font-size: 2.25rem;
-    }
-    .GitHub:hover{
-        color: blue;
-    }
-    #contact_me_btn{
-        flex: 1;
-        font-size: 2.25rem;
-        border-radius: 2.438rem;
-        font-size: 1.25rem;
-        height: 3.438rem;
-        width: 9rem;
-        background-color: rgba(10, 105, 184, 1);
-        border: 0;
-        color: white;
-    }
-    #contact_me_btn:hover{
-      color: black;
-    }
-    .MobileLayout{
-        visibility: hidden;
-        width: 0;
-        height: 0;
-    }
-    .SideBar{
-        display: none;
-    }
-    
+@media screen and (min-width: 600px) {
+  .BigScreen {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .Title {
+    flex: 3;
+    font-size: 2.25rem;
+  }
+  .LinkedIn {
+    flex: 1;
+    color: black;
+    font-size: 2.25rem;
+  }
+  .LinkedIn:hover {
+    color: blue;
+  }
+  .GitHub {
+    flex: 1;
+    color: black;
+    font-size: 2.25rem;
+  }
+  .GitHub:hover {
+    color: blue;
+  }
+  #contact_me_btn {
+    flex: 1;
+    font-size: 2.25rem;
+    border-radius: 2.438rem;
+    font-size: 1.25rem;
+    height: 3.438rem;
+    width: 9rem;
+    background-color: rgba(10, 105, 184, 1);
+    border: 0;
+    color: white;
+  }
+  #contact_me_btn:hover {
+    color: black;
+  }
+  .MobileLayout {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+  .SideBar {
+    display: none;
+  }
 }
 /* End of Deasktop layout */
-header{
-    font-family: "Montserrat Alternates";
-    margin: 0.5rem;
+header {
+  font-family: "Montserrat Alternates";
+  margin: 0.5rem;
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }

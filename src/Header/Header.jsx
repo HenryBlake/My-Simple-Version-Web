@@ -1,7 +1,13 @@
 import "../Header/HeaderStyle.css"
 import SideBar from "./SideBar/SideBar"
 import MenuIcon from '@mui/icons-material/Menu';
+import { useState } from "react";
 function Header() {
+    const [isShown, ShowSidebar] = useState(false)
+
+    const toggleSidebar = () => {
+        ShowSidebar(prev => !prev)
+    }
     return (
         <header>
             <div className="BigScreen">
@@ -12,11 +18,13 @@ function Header() {
             </div>
             <div className="MobileLayout">
                 <p className="Title">Henry(Qihan) <span style={{ color: 'red' }}>Wang</span></p>
-                <div className="MenuBtn">
+                <div className="MenuBtn" onClick={toggleSidebar}>
                     <MenuIcon />
                 </div>
             </div>
-            <SideBar />
+            {/* {isShown && <SideBar onClose={toggleSidebar} isShown={isShown}/>} */}
+            <SideBar isShown={isShown} onClose={toggleSidebar} />
+
         </header>
     )
 }

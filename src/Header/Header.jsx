@@ -24,7 +24,7 @@ function Header() {
             </div>
             {/* {isShown && <SideBar onClose={toggleSidebar} isShown={isShown}/>} */}
             <SideBar isShown={isShown} onClose={toggleSidebar} />
-
+            
         </header>
     )
 }

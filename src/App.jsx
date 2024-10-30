@@ -5,7 +5,10 @@ import MenuIcon from '@mui/icons-material/Menu';
 function App() {
 
   return (
-    <Header/>
+    <>    
+    <Header />
+    <h1>This is a h1</h1>
+    </>
   )
 }
 

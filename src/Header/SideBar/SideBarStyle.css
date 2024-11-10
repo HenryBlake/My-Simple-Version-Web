@@ -1,12 +1,12 @@
 @media screen and (max-width: 600px) {
-  .SideBar {
-    display: flex;
+  .Sidebar {
+    /* display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-evenly; */
+    text-align: center;
     /* min-height: 140px; */
   }
-  
+
   .GitHub {
     color: black;
   }
@@ -21,5 +21,25 @@
   }
   a {
     text-decoration: none;
+    display: block;
   }
+  
+}
+.dropdown-menu-enter {
+  height: 0;
+  opacity: 0;
+}
+.dropdown-menu-enter-active {
+  height: 100px;
+  opacity: 1;
+  transition: height 100ms,opacity 100ms;
+}
+.dropdown-menu-exit {
+  height: 100px;
+  opacity: 1;
+}
+.dropdown-menu-exit-active {
+  height: 0;
+  opacity: 0;
+  transition: height 100ms,opacity 100ms;
 }

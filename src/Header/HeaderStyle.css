@@ -22,10 +22,10 @@
   .Title {
     flex: 3;
   }
-  SideBar {
+  /* SideBar {
     flex: 2;
     align-self: self-end;
-  }
+  } */
   /* .SideBar_container {
     position: absolute;
     width: 96%;
@@ -42,7 +42,7 @@
     transition: top 0.5 ease;
     width: 100%;
     overflow: hidden;
-    top:0;
+    top: -60px;
     /* top: -250px;
     right: 0; 
     width: 100%;
@@ -53,7 +53,7 @@
     /* z-index: 0; */
   }
   .SideBar_container.show {
-    top: 60; 
+    top: 60px; 
     /* height: 200px; */
   }
 }

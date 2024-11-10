@@ -1,10 +1,10 @@
-import "../Header/HeaderStyle.css"
 import SideBar from "./SideBar/SideBar"
 import MenuIcon from '@mui/icons-material/Menu';
+import '../Header/HeaderStyle.css'
 import { useState } from "react";
+import { CSSTransition } from "react-transition-group";
 function Header() {
     const [isShown, ShowSidebar] = useState(false)
-
     const toggleSidebar = () => {
         ShowSidebar(prev => !prev)
     }
@@ -19,11 +19,13 @@ function Header() {
             <div className="MobileLayout">
                 <p className="Title">Henry(Qihan) <span style={{ color: 'red' }}>Wang</span></p>
                 <div className="MenuBtn" onClick={toggleSidebar}>
-                    <MenuIcon />
+                    <MenuIcon/>
                 </div>
             </div>
+            <SideBar isShown={isShown}/>
             {/* {isShown && <SideBar onClose={toggleSidebar} isShown={isShown}/>} */}
-            <SideBar isShown={isShown} onClose={toggleSidebar} />
+           
+            {/* <SideBar isShown={isShown} onClose={toggleSidebar} /> */}
             
         </header>
     )

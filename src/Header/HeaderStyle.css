@@ -18,49 +18,28 @@
     flex-direction: row;
     justify-items: center;
     align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    /* margin-left: 5px;
+    margin-right: 5px; */
+    width: auto;
+    background-color: white;
   }
   .Title {
     flex: 3;
+    margin-left: 5px;
   }
-  /* SideBar {
-    flex: 2;
-    align-self: self-end;
-  } */
-  /* .SideBar_container {
-    position: absolute;
-    width: 96%;
-    height: 200px;
-    transition: height 2s ease;
-    background-color: gray;
-  }
-  .SideBar_container.show{
-    height: 200px;
-  } */
-  
-  .SideBar_container {
-    position: fixed;
-    transition: top 0.5 ease;
-    width: 100%;
-    overflow: hidden;
-    top: -60px;
-    /* top: -250px;
-    right: 0; 
-    width: 100%;
-    height: 200px;
-    transition: top 0.5s ease;
-    background-color: white;
-    border-left: 1px solid black; */
-    /* z-index: 0; */
-  }
-  .SideBar_container.show {
-    top: 60px; 
-    /* height: 200px; */
+  .MenuBtn{
+    margin-right: 5px;
   }
 }
 
 /* End of mobile layout */
 
 @media screen and (min-width: 600px) {
+ 
   .BigScreen {
     display: flex;
     flex-direction: row;
@@ -97,7 +76,10 @@
     border: 0;
     color: white;
   }
-  #contact_me_btn:hover {
+  #contact_me_btn>a{
+    color: white;
+  }
+  #contact_me_btn>a:hover {
     color: black;
   }
   .MobileLayout {

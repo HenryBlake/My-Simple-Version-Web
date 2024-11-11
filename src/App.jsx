@@ -7,7 +7,7 @@ function App() {
   return (
     <>    
     <Header />
-    <h1>This is a h1</h1>
+    {/* <h1>This is a h1</h1> */}
     </>
   )
 }

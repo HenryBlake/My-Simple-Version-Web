@@ -1,10 +1,19 @@
 @media screen and (max-width: 600px) {
-  .Sidebar {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-evenly; */
+  .Dropdown {
+    position: fixed;  
+    top:50px;           
+    left: 0;       
+    right: 0;   
+    width:auto;     
+    height: 10vh;    
+    background-color: white;
+    padding-top: 20px;
+    /* box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.3);  */
+    z-index: 1000; 
+    border-radius: 0 0 5px 5px; 
+    border: 1px solid black;
+    border-top: none;
     text-align: center;
-    /* min-height: 140px; */
   }
 
   .GitHub {
@@ -30,12 +39,12 @@
   opacity: 0;
 }
 .dropdown-menu-enter-active {
-  height: 100px;
+  height: 10vh;
   opacity: 1;
   transition: height 100ms,opacity 100ms;
 }
 .dropdown-menu-exit {
-  height: 100px;
+  height: 10vh;
   opacity: 1;
 }
 .dropdown-menu-exit-active {

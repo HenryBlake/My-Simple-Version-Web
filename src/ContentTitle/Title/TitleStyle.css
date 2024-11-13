@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Angkor&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inconsolata:wght@200..900&family=Inder&family=Madimi+One&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ojuju:wght@200..800&family=Oswald:wght@200..700&family=Truculenta:opsz,wght@12..72,100..900&family=Whisper&display=swap");
+.Title_bigscreen {
+  font-family: "Inder";
+}
+.Title_mobile {
+  font-family: "Inder";
+}
+section {
+  text-align: center;
+}
+@keyframes typing_bigscreen {
+  from {
+    width: 0;
+  }
+  to {
+    width: 51.924rem;
+  }
+}
+@keyframes typing_mobile {
+    from {
+      width: 0;
+    }
+    to {
+      width:19.781rem;
+    }
+  }
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: red;
+  }
+}
+@media screen and (max-width: 600px) {
+  section {
+    margin-top: 50px;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .Title_bigscreen {
+    visibility: hidden;
+  }
+  .Title_mobile {
+    font-size: 4.5rem;
+    overflow: hidden; 
+    width: 19.781rem;
+    border-right: .15em solid black; 
+    white-space: nowrap;
+    animation: typing_mobile 1s steps(7, end), blink-caret 0.75s step-end infinite;
+  }
+}
+@media screen and (min-width: 600px) {
+  .Title_mobile {
+    visibility: hidden;
+  }
+  .Title_bigscreen{
+    font-size: 4rem;
+    width: 51.924rem;
+    overflow: hidden; 
+    border-right: .15em solid black; 
+    white-space: nowrap;
+    animation: typing_bigscreen 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  }
+  section {
+    height: 30vh;
+    margin-left: 1%;
+    margin-right: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}

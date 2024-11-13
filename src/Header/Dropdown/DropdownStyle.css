@@ -10,8 +10,9 @@
     padding-top: 20px;
     /* box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.3);  */
     z-index: 1000; 
-    border-radius: 0 0 5px 5px; 
-    border: 1px solid black;
+    border-radius: 0 0 2px 2px; 
+    /* border: 1px solid black; */
+    box-shadow: 1px 1px 1px grey,-1px -1px 1px grey;
     border-top: none;
     text-align: center;
   }
